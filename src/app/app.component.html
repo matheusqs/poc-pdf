@@ -1,2 +1,782 @@
-<h1>HTML to PDF in Angular 9</h1>
-<button (click)="gerarPDF()">Generate PDF</button>
+<section style="display: none;">
+  <section id="PDF">
+    <div class="page">
+      <div class="header">
+        <img src="../assets/images/logo_vale.jpg" />
+        <div>
+          <h3 class="title">Global mobility</h3>
+          <h4 class="subtitle">Carta oferta / offer letter</h4>
+        </div>
+      </div>
+      <section class="header-info">
+        <section>
+          <strong>ID</strong>
+          <span>=BalanceSheet!D4</span>
+          <strong>Name</strong>
+          <span>=BalanceSheet!D5</span>
+          <strong>Espected Start Date</strong>
+          <span>=BalanceSheet!D9</span>
+          <strong>Home Company</strong>
+          <span>=BalanceSheet!L9</span>
+          <strong>Home Country</strong>
+          <span>=BalanceSheet!D13</span>
+          <strong>Home Position</strong>
+          <span>=BalanceSheet!D15</span>
+        </section>
+        <section>
+          <strong>Assigment Type</strong>
+          <span>=BalanceSheet!D8</span>
+          <strong>Duration</strong>
+          <span>=BalanceSheet!D10</span>
+          <strong>Host Location Class</strong>
+          <span>=BalanceSheet!L8</span>
+          <strong>Host Company</strong>
+          <span>=BalanceSheet!L10</span>
+          <strong>Host Country</strong>
+          <span>=BalanceSheet!J13</span>
+          <strong>Host Position</strong>
+          <span>=BalanceSheet!J15</span>
+        </section>
+      </section>
+
+      <section class="content">
+        <section>
+          <h3 class="title title--text-center title--darker page-title">
+            Termos e condições
+          </h3>
+          <h3 class="title">1. Início e oficialização da oferta</h3>
+          <p>
+            É com satisfação que confirmamos a oferta para uma designação
+            internacional temporária na "&I7&", para a posição
+            "&BalanceSheet!$J$15&", baseado em "&I8&".
+          </p>
+          <p>
+            A designação internacional deverá começar em "&TEXTO(C6;"DD")&" de
+            "&TEXTO(C6;"MMMM")&" de "&TEXTO(C6;"AAAA")&", sujeita ao cumprimento
+            dos requerimentos de imigração da localidade de destino, obtenção e
+            manutenção das autorizações, documentos e vistos apropriados.
+          </p>
+          <p>
+            A designação será inicialmente de "&ESQUERDA(I5;2)&" meses a partir da
+            data efetiva de início das suas atividades na localidade de destino,
+            podendo ser prorrogada, com seu consentimento, ou reduzida, a critério
+            da empresa.
+          </p>
+          <p>
+            Você somente será elegível ao pacote de remuneração e benefícios
+            descrito nesta carta proposta durante o período de designação
+            internacional na localidade de destino. O término da designação será
+            considerado condição resolutiva da cessão da remuneração e benefícios
+            abaixo listados.
+          </p>
+          <h3 class="title">2. Pagamento da Remuneração</h3>
+          <p>
+            A remuneração da sua designação internacional será paga na localidade
+            de destino de acordo com o estabelecido no Balance Sheet (anexo).
+          </p>
+          <p>
+            Juntamente com sua remuneração mensal você receberá o Adicional de
+            Transferência que será composto pelos itens de Custo de Vida (CoL),
+            Qualidade de Vida (Hardship) e de Transição (Transition). A soma dos
+            subitens será de no mínimo 25% sobre o salário bruto anual.<br />
+            De acordo com informações prestadas pela Vale: (i) o seu contrato de
+            trabalho com a referida empresa não será rescindido, mas, a partir da
+            data de início efetivo da sua designação, você será mantido em licença
+            sem vencimentos; (ii) durante a designação internacional, o salário de
+            origem será referência para cálculo de benefícios devidos no país de
+            origem, tais como plano de pensão, previdência social, recolhimento do
+            FGTS e abonos resultantes de acordos locais.
+          </p>
+          <p>
+            Serão enviadas notas de débito mensalmente para as cobranças do INSS,
+            parte de contribuição do empregado, da Valia e do PASA, caso haja
+            alguma despesa relativa. É de responsabilidade do designado a quitação
+            das notas de débito em dia.
+          </p>
+          <h3 class="title">3. Pacote de Remuneração</h3>
+          <p>
+            Para definição do seu salário anual no país de destino, serão
+            considerados os valores contidos no Balance Sheet (anexo).
+          </p>
+          <p>
+            <strong class="strong--has-underline">Salário-Host:</strong> Composto
+            pelo salário base Home ajustado pelo custo e qualidade de vida, quando
+            aplicáveis. O valor considerado é liquido de impostos e pago no host
+            location.
+          </p>
+        </section>
+        <div class="content__line"></div>
+        <section>
+          <h3 class="title title--text-center title--darker page-title">
+            Terms and conditions
+          </h3>
+          <h3 class="title">1. Commencement and Operation of Offer</h3>
+          <p>
+            We have the pleasure in confirming our offer to you for a temporary
+            international assignment to "&I7&", for the position of
+            "&BalanceSheet!$J$15&", based in "&'OfferLetter (New)'!I8&".
+          </p>
+          <p>
+            The international assignment shall start on "&TEXTO(C6;"DD")&" of
+            "&TEXTO(C6;"MMMM")&" of "&TEXTO(C6;"AAAA")&", subject to you meeting
+            host location immigration requirements, obtaining and maintaining
+            appropriate permits, documents and visas.
+          </p>
+          <p>
+            The assignment duration is initially of "&ESQUERDA(I5;2)&" months from
+            effective start date of your activities in host location, and it may
+            be extended with your consent or reduced at the company discretion.
+          </p>
+          <p>
+            You will only be entitled to the related compensation and benefits
+            package during the assignment period in host location. The completion
+            of the assignment will be considered final condition for the
+            termination of compensation and benefits listed below.
+          </p>
+          <h3 class="title">2. Compensation payment</h3>
+          <p>
+            Your International Assignment compensation will be paid in host
+            location, accordingly the established in Balance Sheet (attached).
+          </p>
+          <p>
+            Along with your monthly remuneration you will receive the Transfer
+            Allowance is composed by Cost of Living Allowance (CoL), Hardship
+            Allowance and Transition Allowance. The total of the sub-items will be
+            at least 25% of the gross annual salary.<br />
+            As per information from Vale: (i) your employment contract with the
+            referred company will not be terminated however since effective start
+            of assignment date you will be kept on unpaid leave; (ii) during
+            international assignment, home salary will be used as reference for
+            calculation of benefits due in home country such as pension plan,
+            social charges and payments due to local agreements. (iii) Transfer
+            Allowance is composed by Col Allowance, Hardship Allowance and
+            Transition Allowance.
+          </p>
+          <p>
+            Monthly debit notes will be sent to employee to charge INSS due from
+            employee contribution, Valia and PASA, if there is any expense
+            related. Assignee is responsible for having debit notes paid on time.
+          </p>
+          <h3 class="title">3. Remuneration package</h3>
+          <p>
+            For the definition of your annual salary overseas, it will be taken in
+            consideration values from Balance Sheet (attached).
+          </p>
+          <p>
+            <strong class="strong--has-underline">Host-Compensation:</strong>
+            Composed by home based salary adjusted accordingly cost of living in
+            host location and quality of living, when applicable. This value is
+            net of taxes and paid in host location.
+          </p>
+        </section>
+      </section>
+      <span class="page-number">Offer Letter to "&$C$5&" - Page 1/6</span>
+    </div>
+    <div class="page">
+      <section class="content">
+        <section>
+          <p>
+            <strong class="strong--has-underline">Proteção tributária:</strong>
+            Após o fechamento das declarações fiscais do Home e do Host será
+            fornecido o Tax Protection no intuito de compensar qualquer perda
+            tributária entre o que teria sido gasto no país de origem e o que foi
+            efetivamente pago de impostos no país de destino. Para definição de
+            eventual valor devido pela VALE ao colaborador, será considerada no
+            cálculo a restituição de Imposto de Renda a ser depositada/ já
+            depositada no país de destino.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Remuneração Variável:</strong>
+            Elegível ao programa de Remuneração Variável do país de origem,
+            considerando salários e targets da referida localidade de origem. A
+            empresa se reserva do direito de mudar os termos deste programa de
+            remuneração variável e metas individuais periodicamente.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Incentivos de Longo Prazo:</strong
+            >
+            De acordo com os programas da Vale vigentes para o seu nível
+            hierárquico.
+          </p>
+
+          <h3 class="title">4. Benefícios de Realocação</h3>
+          <p>
+            <strong class="strong--has-underline">Avaliação Médica:</strong>
+            Você e seus dependentes acompanhantes deverão passar por Exame Médico
+            anterior à designação, seguindo diretrizes da Instrução de Saúde do
+            Viajante. Todas as despesas associadas a esta avaliação e vacinas
+            recomendadas para o processo de visto serão pagas pela empresa.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Viagem de reconhecimento:</strong
+            >
+            Viagem para você e seu cônjuge/ companheiro para a localidade de
+            destino, sujeita à aprovação do diretor da área. Serão oferecidos:
+            passagem aérea de ida e volta, acomodação, alimentação e transporte
+            local para até 4 dias na cidade de destino, conforme limites da
+            política de viagens vigente.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Imigração:</strong>
+            A empresa dará suporte total às permissões para residência no país de
+            destino, e arcará com as despesas para emissão de visto e passaporte,
+            incluindo renovações, para o empregado e os seus dependentes
+            acompanhantes.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Mudança de Móveis:</strong>
+            Mudança de Móveis: Você poderá escolher entre uma das duas opções
+            seguintes, com exceção dos empregados que ficarem em alojamentos ou
+            casas de condomínio mobiliadas, oferecidas pela empresa de destino,
+            para os quais será concedido pagamento de um valor único diferenciado,
+            a ser definido pela localidade de destino:
+            <br />- Mudança marítima, incluindo seguro. Itens de alto valor,
+            pianos, carros, animais ou outros que requerem transporte especial não
+            serão autorizados: <br />- Solteiro ou acompanhado de cônjuge/
+            companheiro, sem filhos dependentes acompanhantes: container padrão de
+            20 pés; <br />- Se acompanhado de 2 ou mais dependentes: container
+            padrão de 40 pés; OU <br />- Verba para compra de móveis no valor
+            correspondente a US$10,000 (dez mil dólares americanos), paga em moeda
+            do país de destino, líquido de impostos.
+          </p>
+        </section>
+        <div class="content__line"></div>
+        <section>
+          <p>
+            <strong class="strong--has-underline">Tax Protection:</strong>
+            After income tax is informed in both home and host location, it will
+            be offered a tax protection to compensate loss between what would have
+            been paid in home location and what was actually paid in host
+            location. For the definition of any amount owed to the employee by
+            VALE, it will be considered the calculation for the income tax refund
+            to be deposited / already deposited in the host country.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Variable Pay:</strong>
+            Eligible to home country variable compensation plan, considering
+            salary and targets of home location. The Company reserves the right to
+            change the terms of its variable pay plan and company and individual
+            performance targets from time to time.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Long Term Incentives:</strong>
+            According to Vale programs in place for your hierarchic level.
+          </p>
+
+          <h3 class="title">4. Relocation Benefits</h3>
+          <p>
+            <strong class="strong--has-underline">Medical Evaluation:</strong>
+            You and your accompanying dependents must have a Medical Evaluation
+            prior to beginning of assignment, according to Traveler Heath
+            Instruction. All expenses regarding to the medical evaluation and
+            vaccines required for visa process will be paid by the company.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Look-See Trip:</strong>
+            Trip to you and your spouse/ partner to host location, subject to area
+            director approval. You will be provided with round air tickets,
+            accommodation, meals and local transportation for up to four (4) days
+            in host city, according to current travel policy limits.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Immigration:</strong>
+            The company will provide immigration support to assist with work
+            permit, and will pay visa and passport expenses, including renewals,
+            for employee and dependents accompanying.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Household goods Shipment:</strong
+            >
+            You will be able to choose from one of the two following options,
+            except for employees who stay in furniture condominium houses offered
+            by host company which payment shall be granted to a lump sum to be
+            define per localities:
+            <br />- Sea shipment, including insurance. Items with extraordinary
+            value, pianos, cars, pets or other that may require special
+            transportation are not authorized: <br />- Single, or accompanied by
+            Spouse/Partner but with no accompanying children: standard container
+            of 20 feet; <br />- If accompanied by 2 or more dependents: standard
+            container of 40 feet; OR <br />- Lump Sum to acquire furniture
+            equivalent to US$10,000 (ten thousand US dollars), paid in host
+            country currency, net of taxes.
+          </p>
+        </section>
+      </section>
+      <span class="page-number">Offer Letter to "&$C$5&" - Page 2/6</span>
+    </div>
+    <div class="page">
+      <section class="content">
+        <section>
+          <p>
+            <strong class="strong--has-underline">Auxílio-Instalação:</strong>
+            Com o objetivo de cobrir despesas diversas com a sua mudança para o
+            país de destino, você receberá um auxílio-instalação em parcela única
+            de acordo com uma das seguintes opções:
+            <br />- Solteiro ou acompanhado de cônjuge/ companheiro, sem filhos
+            dependentes acompanhantes: 10% do seu salário-base anual liquido da
+            localidade de destino, sujeito aos impostos locais. <br />- Se
+            acompanhado de 2 ou mais dependentes: 15% do seu salário-base anual
+            liquido da localidade de destino, sujeito aos impostos locais.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Viagem de ida:</strong>
+            Você e seus dependentes acompanhantes receberão uma passagem de ida
+            para a cidade de destino, conforme política de viagens da Vale.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Acomodação temporária:</strong>
+            Você e seus dependentes acompanhantes serão acomodados em hotel ou
+            flat/ apartamento com serviços por período de até 60 dias consecutivos
+            a partir da data de chegada à localidade destino.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Transporte temporário:</strong>
+            Será oferecido um auxílio, correspondente a ajuda transporte por até
+            30 dias, definido pelo país de destino. Esse benefício somente será
+            concedido quando não houver auxílio transporte na localidade de
+            destino (para não haver duplicidade de benefício).
+          </p>
+          <p>
+            <strong class="strong--has-underline">Treinamento cultural:</strong>
+            Você e seu cônjuge/companheiro acompanhante terão direito a um
+            treinamento cultural para facilitar a adaptação ao país de destino.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Treinamento de idiomas:</strong>
+            Se o idioma no local destino for diferente do idioma nativo do
+            empregado, o treinamento será oferecido para você e seus dependentes
+            acompanhantes no idioma do local de destino ou na língua inglesa,
+            limitado a 100 horas por pessoa. O benefício não utilizado por uma
+            pessoa não pode ser utilizado por outro membro da família.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Serviços de realocação:</strong>
+            Você terá o suporte de um prestador local de serviços de realocação no
+            país de destino, para ajudar a você e sua família na busca de moradia
+            e escola para os filhos.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Assistência ao cônjuge:</strong>
+            se for permitido ao cônjuge trabalhar no país de destino, você terá um
+            limite de US$5,000 para reembolso de custos (mediante apresentação de
+            recibos) com serviços de recolocação profissional. Não poderá ser
+            utilizado para despesas de cursos ou treinamento.
+          </p>
+          <h3 class="title">5. Benefícios na Localidade de Destino</h3>
+          <p>
+            <strong class="strong--has-underline">Auxílio-Moradia:</strong>
+            Limite mensal de acordo com o descrito no Balance Sheet (anexo), livre
+            de impostos, para cobrir aluguel e despesas obrigatórias. O seguro
+            caução eventualmente requerido no aluguel do imóvel será pago pela
+            empresa do país de destino e deverá ser devolvido ao término da
+            designação internacional. Você será pessoalmente responsável por
+            qualquer valor cobrado por danos causados ao imóvel.
+          </p>
+        </section>
+        <div class="content__line"></div>
+        <section>
+          <p>
+            <strong class="strong--has-underline">Settlement Allowance:</strong>
+            To assist you with miscellaneous expenses on your move to the Host
+            Location, you will be offered with a lump sum of the Settlement
+            Allowance, according to one of the following scenarios:
+            <br />- Single, or accompanied by Spouse/Partner but with no
+            accompanying children: 10% of net annual base salary in Host Location,
+            subject to local applicable taxes; <br />- If accompanied by 2 or more
+            dependents: 15% of net annual base salary in Host Location, subject to
+            local applicable taxes.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Relocation travel:</strong>
+            You and your accompanying dependents will receive a one-way air ticket
+            to host location, according to Vale international travel policy.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Temporary accommodation:</strong
+            >
+            You and your accompanying dependents will be accommodated in hotel or
+            flat/ services apartment for a period limited to 60 days starting at
+            arrival date in host location.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Temporary Transportation:</strong
+            >
+            Will be offered an assistance, correspondent to transportation limited
+            to 30 days, defined by host country. This benefit only will be
+            provided when there is no transportation allowance n host location (to
+            avoid double benefit).
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Intercultural Orientation:</strong
+            >
+            you and your accompanying spouse/ partner will be entitled to a
+            cross-cultural training to facilitate your adaptation in host
+            location.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Language Training:</strong>
+            If Host Location language is different from International Assignee’s
+            native, training will be provided in the host location language or in
+            English to you and your accompanying dependents, limited to 100 hours
+            per person. It is not possible to transfer training hours from someone
+            to family member.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Relocation Services:</strong>
+            you will have the support from a local relocation services firm in
+            Host Location, to support you and your family on finding a permanent
+            accommodation and school for children.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Spousal Assistance:</strong>
+            if work is permitted for your spouse in Host Location, you will be
+            entitled to US$5,000 limit to reimburse costs (upon presentation of
+            receipts and evidences) with outplacement services. This cannot be
+            used to cover expenses with training our courses.
+          </p>
+          <h3 class="title">5. Benefits in Host Location</h3>
+          <p>
+            <strong class="strong--has-underline">Housing Allowance:</strong>
+            Monthly limit accordingly with Balance Sheet (attached), net of taxes,
+            to cover rental and mandatory fees. Any bond (security deposit) on the
+            property is met by host location company and you must return it to
+            Vale upon assignment termination. You are personally responsible for
+            any amount withheld for damage caused to the property.
+          </p>
+        </section>
+      </section>
+      <span class="page-number">Offer Letter to "&$C$5&" - Page 3/6</span>
+    </div>
+    <div class="page">
+      <section class="content">
+        <section>
+          <p>
+            <strong class="strong--has-underline">Auxílio-Educação:</strong>
+            Reembolso das despesas de mensalidade e taxas de matrícula, no limite
+            de valor estabelecido para a localidade de destino, mediante
+            comprovação, para dependentes que o acompanham.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Auxílio-Transporte:</strong>
+            Será oferecido um auxílio mensal de acordo com os valores descritos no
+            Balance Sheet (anexo).
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Plano de Previdência Privada:</strong
+            >
+            Você continuará a ser elegível ao seu plano de previdência privada no
+            país de origem, com as contribuições da empresa e as suas
+            contribuições pessoais, de acordo com o plano vigente, com base no
+            salário base de referência no país de origem.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Seguro de vida:</strong>
+            Conforme plano vigente no seu país de origem durante a sua designação
+            internacional.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Seguro médico:</strong>
+            Você e seus dependentes acompanhantes serão cobertos por um plano
+            médico a ser oferecido no país de destino. O plano médico no país de
+            origem será mantido durante a designação internacional.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Seguridade Social:</strong>
+            Quando permitido por lei, você continuará coberto pelo programa de
+            seguridade social no país de origem e deverá manter as contribuições
+            de sua responsabilidade. Para países em que houver acordo
+            previdenciário assinado com o Brasil, poderá ser solicitado um
+            Certificado de Deslocamento para garantir os direitos de seguridade
+            social previstos nas legislações dos dois países.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Assistência tributária:</strong>
+            Consultoria tributária durante a sua designação internacional,
+            provendo-lhe informações das consequências fiscais nos países de
+            origem e destino. Você terá apoio na preparação da sua declaração de
+            imposto de renda nos dois países durante a sua designação e no ano da
+            repatriação. Se houver falta de cooperação ou atraso ao prover as
+            informações necessárias da sua parte, você será responsável por
+            qualquer taxa ou multa eventualmente devidas. Dependentes
+            acompanhantes também serão elegíveis aos serviços tributários com
+            limite de despesas de US$ 5.000,00.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Férias anuais:</strong>
+            Caso o seu contrato no país de origem estabeleça um número de dias de
+            férias por ano superior à definida pela legislação da localidade do
+            país de destino, essa referência deverá ser seguida durante a
+            designação.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Passagem aérea anual:</strong>
+            A cada período de 12 (doze) meses de designação internacional, será
+            oferecida a você e seus dependentes acompanhantes uma passagem aérea
+            para sua a localidade de origem (ida/ volta). Caso o empregado prefira
+            viajar para outro destino, a empresa oferece essa flexibilidade.
+            Custos que sejam acima do valor de viagem ao país de origem serão de
+            responsabilidade do empregado.
+          </p>
+        </section>
+        <div class="content__line"></div>
+        <section>
+          <p>
+            <strong class="strong--has-underline">Education Assistance:</strong>
+            Reimbursement of monthly tuition and registration fees, limited by
+            value established for the host location, upon presentation of receipts
+            for accompanying dependents.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Transportation Allowance:</strong
+            >
+            It will be provided a monthly transportation allowance accordingly
+            with Balance Sheet (attached).
+          </p>
+          <p>
+            <strong class="strong--has-underline">Company Pension Plan:</strong>
+            You continue to be eligible to your home country pension plan, with
+            home company and personal contributions being made in accordance with
+            current arrangements, based on your Home Country salary as reference.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Life Insurance:</strong>
+            In accordance with your home-based arrangements during your
+            international assignment.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Medical insurance:</strong>
+            You and your accompanying dependents will be covered by a Company-paid
+            health care in host location. Home country health care will remain
+            active throughout your international assignment.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Social Security:</strong>
+            When permitted by law, you remain covered under the social security
+            programs of your home location, and you must continue contributing to
+            the social security. For countries where there is social security
+            agreement signed with Brazil, a Displacement Certificate can be
+            requested to guarantee social security rights by law in both home and
+            host location.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Tax Advisory:</strong>
+            You will be provided with assistance from a service provider during
+            your international assignment, providing information on tax
+            consequences in both home and host location. You will have support on
+            your annual income tax inform in home and host location for the
+            duration of your assignment, as well as the tax year of repatriation.
+            Should there be a lack of cooperation or delays in providing
+            information required for all tax processes, you will be responsible
+            for any extra charge or penalty. Accompanying dependents are eligible
+            to tax services limited to US$ 5.000,00 per year.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Vacation/ Annual Leave:</strong>
+            If Home Company offers more days for annual leave, this should be
+            followed throughout the assignment.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Annual Home Trip:</strong>
+            For every 12 (twelve) months in international assignment, you and your
+            accompanying dependents will be offered one round-trip airfare to home
+            location. There is flexibility to use home leave to other country of
+            choice considering that additional cost above Home Country ticket
+            value is assignee's account.
+          </p>
+        </section>
+      </section>
+      <span class="page-number">Offer Letter to "&$C$5&" - Page 4/6</span>
+    </div>
+    <div class="page">
+      <section class="content">
+        <section>
+          <p>
+            <strong class="strong--has-underline"
+              >Passagem aérea adicional:</strong
+            >
+            Será concedido para você e seus dependentes acompanhantes, durante a
+            designação internacional, reembolso limitado a:
+            <br /><strong>- Localidade A e AA:</strong> Não aplicável; <br />
+            <strong>- Localidade B:</strong> 50% da passagem aérea (ida/ volta);
+            <br />
+            <strong>- Localidade C:</strong> 100% da passagem aérea (ida/ volta).
+            <br />O destino dessa passagem será de livre escolha e também seguirá
+            a política de viagens da Vale. O benefício inicial será fornecido após
+            a conclusão dos 6 meses iniciais na localidade de destino e, em
+            seguida, após a conclusão de cada período de 12 meses subsequentes,
+            limitado ao período máximo de 48 meses.
+          </p>
+          <p>
+            <strong class="strong--has-underline"
+              >Passagem aérea adicional para solteiros ou desacompanhados de
+              família na localidade C:</strong
+            >
+            Você terá direito a uma passagem aérea para a localidade de origem
+            após a conclusão de cada 3 meses no local da designação, limitado ao
+            período máximo de 48 meses.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Viagem de Emergência:</strong>
+            Em caso de morte ou doença grave de um membro imediato da família ou
+            do cônjuge/companheiro - pais, filho (biológico ou adotivo), irmão ou
+            irmã - a empresa fornecerá uma passagem aérea de ida e volta e
+            transporte de/para o aeroporto com um tempo limitado de folga conforme
+            as políticas e procedimentos da localidade de destino, para você e
+            seus dependentes acompanhantes.
+          </p>
+          <h3 class="title">6. Benefícios Repatriação</h3>
+          <p>
+            Se ao completar a designação, você retornar ao país de origem, será
+            elegível aos benefícios de repatriação de acordo com política vigente.
+          </p>
+          <p>
+            Os benefícios de repatriação não serão aplicáveis em caso de a empresa
+            oferecer e o empregado aceitar, uma nova oferta de designação na mesma
+            localidade.
+          </p>
+          <h3 class="title">7. Término da designação</h3>
+          <p>
+            A designação poderá ser terminada a qualquer momento pela empresa de
+            destino, pela Vale no Brasil ou por iniciativa própria. Todos os
+            adicionais relacionados à designação internacional serão
+            descontinuados a partir da data do término do contrato no país de
+            destino.
+          </p>
+        </section>
+        <div class="content__line"></div>
+        <section>
+          <p>
+            <strong class="strong--has-underline">Additional Home Trip:</strong>
+            You and your accompanying dependents during the international
+            assignment will be entitled to a reimbursement limited to:
+            <br /><strong>- Location A and AA:</strong> Not applicable;
+            <br /><strong>- Location B:</strong> 50% of round-trip air ticket;
+            <br /><strong>- Location C:</strong> 100% of round-trip air ticket.
+            The destination will be at your choice, also following Vale travel
+            policy. Initial benefit will be provided upon completion of initial 6
+            months in Host Location, and then upon completion of each subsequent
+            12-month period, limited to maximum period of 48 months.
+          </p>
+          <p>
+            <strong class="strong--has-underline">
+              Additional Home Trip for Single or family unaccompanied in C
+              location:
+            </strong>
+            You will be entitled to one air ticket to Home Location upon
+            completion of every 3 months in assignment location. After period of
+            48 months of assignment, this benefit will not be applicable.
+          </p>
+          <p>
+            <strong class="strong--has-underline">Emergency Leave:</strong>
+            In case of death or serious illness of your or your Spouse/Partner's
+            immediate family member - parents, children (biological or adoptive),
+            brother or sister - the company will provide one round trip air ticket
+            and transportation to/from airport along with some limited time off as
+            per host location policies and procedures to you and your accompanying
+            dependents.
+          </p>
+          <h3 class="title">6. Repatriation Benefits</h3>
+          <p>
+            If upon completion of your assignment, you return to home location,
+            you will be provided with repatriation benefits according to current
+            policy.
+          </p>
+          <p>
+            Repatriation benefits will not be applicable if the company offers,
+            and employees accepts, new assignment/localization in the same
+            location.
+          </p>
+          <h3 class="title">7. Termination of Assignment</h3>
+          <p>
+            This assignment may be terminated by the Host company, by Vale or
+            yourself at any time. All international assignment-related
+            differentials will cease upon end of contract in host location.
+          </p>
+        </section>
+      </section>
+      <span class="page-number">Offer Letter to "&$C$5&" - Page 5/6</span>
+    </div>
+    <div class="page">
+      <section class="content">
+        <section>
+          <h3 class="title">8. Confidencialidade</h3>
+          <p>
+            Pelo presente instrumento e na melhor forma de direito, o Empregado
+            assume a obrigação de não divulgar a terceiros, pessoas físicas ou
+            jurídicas, vinculadas ou não à Empresa, os termos e condições que
+            integram a presente carta-oferta, sem que para tanto tenha obtido
+            prévia autorização por escrito da Empresa.
+          </p>
+          <p>
+            A divulgação, pelo Empregado, dos termos e condições a terceiros,
+            inclusive a empregados da Empresa, caracterizará falta passível de
+            aplicação das penas previstas na legislação.
+          </p>
+          <p>
+            Estes termos e condições revogam quaisquer outros termos e condições
+            para designação internacional, se aplicável.
+          </p>
+          <p>
+            Casos omissos, ou questionamento na interpretação destes termos
+            deverão ser discutidos e aprovados com a área de RH Corporativo da
+            Vale.
+          </p>
+        </section>
+        <div class="content__line"></div>
+        <section>
+          <h3 class="title">8. Confidentiality</h3>
+          <p>
+            By this instrument and in the best form of law, the Employee
+            undertakes the obligation not to disclose to third persons or
+            entities, linked or not the Company, the terms and conditions that
+            make this offer letter, without having obtained for both prior written
+            consent of the Company.
+          </p>
+          <p>
+            The disclosure by the Employee of the terms and conditions to third
+            parties, including employees of the Company, will feature a fault
+            subject to penalties prescribed in legislation.
+          </p>
+          <p>
+            These terms and conditions supersede any previous international
+            assignment terms and conditions, if applicable.
+          </p>
+          <p>
+            Any omission cases or questions on interpretation of such terms should
+            be discussed and approved by Vale Corporate Human Resources.
+          </p>
+        </section>
+      </section>
+      <section class="signature">
+        <span>=C5</span>
+        <span>Official represent of<br />=I7</span>
+        <section class="signature__date">
+          <span>Date:&nbsp;</span>
+          <div></div>
+          &nbsp;/&nbsp;
+          <div></div>
+          &nbsp;/&nbsp;
+          <div></div>
+        </section>
+        <section class="signature__date">
+          <span>Date:&nbsp;</span>
+          <div></div>
+          &nbsp;/&nbsp;
+          <div></div>
+          &nbsp;/&nbsp;
+          <div></div>
+        </section>
+      </section>
+      <span class="page-number">Offer Letter to "&$C$5&" - Page 6/6</span>
+    </div>
+  </section>
+</section>
+<button (click)="gerarPDF()">Generate PDF Balance Sheet</button>
